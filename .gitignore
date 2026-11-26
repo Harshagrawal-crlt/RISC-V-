@@ -1,0 +1,161 @@
+# =============================================================================
+#  .gitignore for Xilinx Vivado RISC-V Project
+#  Generated for: RV32IM Custom Processor
+#  Keeps: .xpr, all RTL sources (.v), testbenches, constraints (.xdc)
+#  Ignores: all Vivado-generated build artifacts, logs, caches, binaries
+# =============================================================================
+
+
+# =============================================================================
+# VIVADO GENERATED DIRECTORIES (fully ignored)
+# These are recreated automatically when you open the .xpr in Vivado
+# =============================================================================
+
+# Compilation & simulation cache
+*.cache/
+*.ip_user_files/
+
+# Hardware manager files
+*.hw/
+
+# Synthesis & implementation run outputs (large binary checkpoints)
+*.runs/
+
+# Simulation build artifacts (compiled objects, waveforms, scripts)
+*.sim/
+
+# Generated sources (IP cores, etc.)
+*.gen/
+
+# Xilinx temp directory (created in project root and run directories)
+.Xil/
+
+# IP exported output
+*.ip_user_files/
+
+# NA directory (Vivado version tracking)
+NA/
+
+
+# =============================================================================
+# VIVADO SESSION & LOG FILES
+# =============================================================================
+
+# Vivado journal (session history) and backup journals
+vivado.jou
+vivado*.backup.jou
+vivado_*.backup.jou
+
+# Vivado log files
+vivado.log
+vivado*.backup.log
+vivado_*.backup.log
+
+# xvlog/xelab protobuf output
+*.pb
+xvlog.pb
+
+
+# =============================================================================
+# SYNTHESIS & IMPLEMENTATION ARTIFACTS
+# =============================================================================
+
+# Design Checkpoints (large binary files, fully regeneratable via synthesis)
+*.dcp
+
+# Bitstream files (binary, regeneratable via implementation)
+*.bit
+*.bin
+*.mcs
+*.prm
+
+# Logic Timing Constraints (generated)
+*.ltx
+
+# Report files (fully regeneratable)
+*.rpt
+*.rpx
+
+# Design Rule Check files
+*.drc
+
+# Timing summary
+*.timing
+timing_summary.txt
+
+# Static timing analysis
+*.sta
+
+# VDS / utilization protobuf
+*.vds
+
+
+# =============================================================================
+# SIMULATION ARTIFACTS
+# =============================================================================
+
+# Waveform database files (large binary)
+*.wdb
+*.wcfg
+
+# XSim compiled object files
+*.sdb
+*.rlx
+*.obj
+*.win64.obj
+
+# XSim generated C files
+*.c
+
+# XSim kernel & executables
+xsimk.exe
+*.exe
+
+# Simulation log files
+*.log
+compile.log
+elaborate.log
+simulate.log
+xvlog.log
+xelab.log
+
+# Simulation script outputs
+xsim.ini
+xsim.dir/
+
+
+# =============================================================================
+# WINDOWS & EDITOR ARTIFACTS
+# =============================================================================
+
+# Windows system files
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# Windows shortcut files
+*.lnk
+
+# VS Code workspace settings (optional: remove next 2 lines to track these)
+.vscode/
+*.code-workspace
+
+# Notepad++ backup files
+*.*~
+
+# Temporary files
+*.tmp
+*.temp
+~$*
+
+
+# =============================================================================
+# EXPLICITLY TRACKED — DO NOT IGNORE THESE
+# (Listed here as documentation; Git tracks them by default)
+# =============================================================================
+# risc v.xpr                              ← Vivado project file (KEEP)
+# risc v.srcs/sources_1/new/*.v           ← All RTL source files (KEEP)
+# risc v.srcs/sim_1/new/*.v               ← All testbench files (KEEP)
+# risc v.srcs/constrs_1/**/*.xdc          ← Constraint files (KEEP)
+# README.md                               ← Documentation (KEEP)
+# .gitignore                              ← This file (KEEP)
